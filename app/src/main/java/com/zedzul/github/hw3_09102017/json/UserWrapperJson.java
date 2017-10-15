@@ -6,7 +6,7 @@ import org.json.JSONObject;
 
 import java.util.Date;
 
-public class UserWrapperJson implements IUser {
+class UserWrapperJson implements IUser {
 
     private static final String ID = "id";
     private static final String NAME = "name";

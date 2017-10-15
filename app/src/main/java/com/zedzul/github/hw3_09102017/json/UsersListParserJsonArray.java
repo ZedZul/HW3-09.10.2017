@@ -1,14 +1,8 @@
 package com.zedzul.github.hw3_09102017.json;
 
-import com.zedzul.github.hw3_09102017.IUser;
-import com.zedzul.github.hw3_09102017.IUsersList;
-
 import org.json.JSONArray;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class UsersListParserJsonArray implements IUsersList {
+public class UsersListParserJsonArray implements IUsersListParser {
 
     private JSONArray mJSONArray;
 
@@ -17,11 +11,7 @@ public class UsersListParserJsonArray implements IUsersList {
     }
 
     @Override
-    public List<IUser> getUsersList() throws Exception{
-        final List<IUser> result = new ArrayList<>();
-        for (int i = 0; i < mJSONArray.length(); i++) {
-            result.add(new UserWrapperJson(mJSONArray.getJSONObject(i)));
-        }
-        return result;
+    public IUsersList parse() throws Exception{
+        return new UsersListWrapperJson(mJSONArray);
     }
 }
