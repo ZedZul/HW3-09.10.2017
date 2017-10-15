@@ -1,0 +1,24 @@
+{
+  "ver": "1.0",
+  "id" : "sdfb23245",
+  "items": [
+    {
+      "id": 1,
+      "name": "John Dorian",
+      "dob": 166262400000,
+      "avatar": "random.link/avatar.png"
+    },
+    {
+      "id": 2,
+      "name": "Jorge House",
+      "dob": -333216000000,
+      "avatar": "random.link/avatar.png"
+    },
+    {
+      "id": 3,
+      "name": "Bob Dylan",
+      "dob": -902764800000,
+      "avatar": "random.link/avatar.png"
+    }
+  ]
+}
