@@ -4,11 +4,11 @@ import java.util.Date;
 
 public interface IUser {
 
-    Long getId();
+    long getId();
 
     String getName();
 
-    Date getDateOfBithday();
+    Date getDateOfBirth() throws Exception;
 
     String getAvatarUrl();
 
